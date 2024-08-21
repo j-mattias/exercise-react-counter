@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Projekt: En Enkel Räknare
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Översikt
+Du ska bygga en enkel räknare i React med TypeScript som kan:
+- Öka räknarens värde.
+- Minska räknarens värde.
+- Återställa räknarens värde till noll.
 
-Currently, two official plugins are available:
+Detta projekt använder grundläggande `useState` för att hantera räknarens värde.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Uppgifter
 
-## Expanding the ESLint configuration
+### 1. Grundläggande Struktur
+- Starta ett nytt React-projekt med TypeScript.
+- Skapa en enkel `App.tsx`-fil där hela applikationen byggs.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 2. Implementera Räknaren
+- Skapa en state-variabel för att hantera räknarens värde.
+- Visa räknarens aktuella värde i UI.
 
-- Configure the top-level `parserOptions` property like this:
+### 3. Lägg till Knappar
+- Lägg till en knapp för att öka värdet.
+- Lägg till en knapp för att minska värdet.
+- Lägg till en knapp för att återställa värdet till noll.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+### 4. Stil
+- Lägg till enkel styling för att göra knapparna och räknaren tydliga och lättanvända.

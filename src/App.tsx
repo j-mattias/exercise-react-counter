@@ -18,7 +18,7 @@ function App() {
             -
           </button>
         </div>
-        <button className="counter__reset" onClick={() => setCount((count) => count = 0)}>
+        <button className="counter__reset" onClick={() => setCount(0)}>
           Reset
         </button>
       </section>
